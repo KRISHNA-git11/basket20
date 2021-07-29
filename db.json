@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "name": "Apple",
+      "id": 1,
+      "count": 1
+    },
+    {
+      "name": "Banana",
+      "id": 2,
+      "count": 0
+    },
+    {
+      "name": "Pears",
+      "id": 3,
+      "count": 0
+    },
+    {
+      "name": "Kiwi",
+      "id": 4,
+      "count": 2
+    },
+    {
+      "name": "Dragon Fruit",
+      "id": 5,
+      "count": 1
+    }
+  ]
+}
