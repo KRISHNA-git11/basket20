@@ -24,6 +24,16 @@
       "name": "Dragon Fruit",
       "id": 5,
       "count": 1
+    },
+    {
+      "name": "cake",
+      "id": 6,
+      "count": 0
+    },
+    {
+      "name": "Silk",
+      "count": 0,
+      "id": 7
     }
   ]
 }

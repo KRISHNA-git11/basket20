@@ -6,7 +6,8 @@ const AddItemModal = () => {
   const itemsContext = createContext(ItemsContext);
   const { addItems } = itemsContext;
   const [name, setName] = useState('');
-  const addItemTo = () => {
+  const addItemTo = async () => {
+    // e.preventDefault();
     if (name === '') {
       M.toast({ html: 'Please enter a message and a tech' });
     } else {
@@ -14,7 +15,15 @@ const AddItemModal = () => {
         name,
         count: 0,
       };
-      addItems(newItem);
+      console.log(newItem);
+      // addItems(newItem);
+      await fetch(`http://localhost:5000/items/`, {
+        method: 'POST',
+        body: JSON.stringify(newItem),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
       M.toast({ html: 'New item added' });
       setName('');
     }
